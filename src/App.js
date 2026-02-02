@@ -4,8 +4,8 @@ import "./App.css";
 function App() {
   return (
     <div className="app-container">
-      <h1>Welcome to Docker single and multistage build</h1>
-      <p>Welcome to NMB trainning session</p>
+      <h1>Welcome to Docker Single and Multi-stage Build</h1>
+      <p>Welcome to NMB Training Session</p>
 
       <RegisterForm />
     </div>
