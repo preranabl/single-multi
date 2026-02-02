@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Set working directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/src/index.js
 
 # Copy package files
 COPY package*.json ./
@@ -18,4 +18,4 @@ ENV PORT=3000
 EXPOSE 3000
 
 # Start the app
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
