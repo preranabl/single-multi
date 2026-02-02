@@ -1,5 +1,5 @@
 # ---------- Build stage ----------
-FROM node:20-alpine AS build
+FROM node:18-alpine AS build
 
 WORKDIR /app
 
@@ -15,7 +15,7 @@ ENV REACT_APP_API_URL=$REACT_APP_API_URL
 RUN npm run build
 
 # ---------- Runtime stage ----------
-FROM node:20-alpine
+FROM node:18-alpine
 
 WORKDIR /app
 
